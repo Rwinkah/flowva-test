@@ -4,7 +4,8 @@ Test for Flowva application process
 ## Tasks
 - **Authentication**: 
   - Sign in, sign up, and forgot password forms.
- **Onboarding**:
+  - Dynamic form validation with warnings for incomplete fields.
+- **Onboarding**:
   - Multi-step onboarding process to collect user preferences.
   - Dynamic form validation with warnings for incomplete fields.
   - Progress bar to track onboarding steps.
