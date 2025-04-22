@@ -9,9 +9,9 @@ export default function Step5({
 		<div className={`${styles["step"]} ${styles["active"]}`} key="step5">
 			<h2>Setup Complete!</h2>
 			<p>
-				Your Flowva library is ready to use. We'll take you to your dashboard
-				now where you can start organizing your tools and tracking your
-				productivity.
+				Your Flowva library is ready to use. We&apos;ll take you to your
+				dashboard now where you can start organizing your tools and tracking
+				your productivity.
 			</p>
 			<div className={styles["btn-group"]}>
 				<button className={styles["btn"]} onClick={finishOnboarding}>

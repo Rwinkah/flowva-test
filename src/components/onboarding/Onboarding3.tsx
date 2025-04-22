@@ -24,8 +24,8 @@ export default function Step3({ formData, setFormData, nextStep }: Step2Props) {
 		<div className={`${styles["step"]} ${styles["active"]}`} key="step3">
 			<h2>Your Tool Stack</h2>
 			<p>
-				Which tools are part of your workflow? We'll pre-load and organize them
-				in your library{" "}
+				Which tools are part of your workflow? We&apos;ll pre-load and organize
+				them in your library{" "}
 			</p>
 
 			<div className={styles["tool-grid"]}>
@@ -63,7 +63,7 @@ export default function Step3({ formData, setFormData, nextStep }: Step2Props) {
 						fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
 					}}
 					onClick={nextStep}>
-					Skip – I'll add them later
+					Skip – I&apos;ll add them later
 				</button>
 			</div>
 		</div>

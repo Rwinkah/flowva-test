@@ -7,13 +7,13 @@ export default function Step0({ nextStep }: { nextStep: () => void }) {
 				<h1>Welcome to Flowva</h1>
 				<p>
 					Your smart library for organizing tools, tracking usage, and turning
-					productivity into rewards. Let's set up your digital library in 2
+					productivity into rewards. Let&apos;s set up your digital library in 2
 					minutes.
 				</p>
 			</div>
 			<div className={styles["btn-group"]}>
 				<button className={styles["btn"]} onClick={nextStep}>
-					Let's Go
+					Let&apos;s Go
 				</button>
 			</div>
 		</div>

@@ -61,6 +61,7 @@ export default function SigninForm({ setActiveForm }: Props) {
 				"success"
 			);
 		}, 1500);
+		setTimeout(() => navigate("/onboard"), 2000);
 	};
 
 	return (
@@ -138,7 +139,7 @@ export default function SigninForm({ setActiveForm }: Props) {
 			</button>
 
 			<div className={styles["form-footer"]}>
-				Don't have an account?{" "}
+				Don&apos;t have an account?{" "}
 				<button
 					className={styles["btn-plain"]}
 					type="button"
