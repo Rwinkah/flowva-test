@@ -1,0 +1,47 @@
+
+
+  
+  
+  
+  #root {
+    width: 100%;
+  height: 100%;
+    justify-items: center;
+    display: flex;
+
+
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body {
+display: flex;
+height: 100vh;
+    overflow-y: scroll;
+justify-content: center;
+align-items: center;
+  }
+
+  .form-message {
+    padding: 12px;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .error-message {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--error);
+    border-left: 4px solid var(--error);
+  }
+  
+  .success-message {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--success);
+    border-left: 4px solid var(--success);
+  }
