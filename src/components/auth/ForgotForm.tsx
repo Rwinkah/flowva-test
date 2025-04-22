@@ -11,9 +11,10 @@ export default function ForgotForm({ setActiveForm }: Props) {
 	const messageElement = useRef<HTMLDivElement | null>(null); // Using useRef to get the element
 	const [email, setEmail] = useState<string>("");
 
-	function submitForm() {
+	function submitForm(e: React.FormEvent) {
+		e.preventDefault();
 		if (!messageElement.current) {
-			alert("message element missing, error loading page");
+			console.warn("message element missing, error loading page");
 			return;
 		}
 		const emailInput = document.getElementById(
@@ -33,10 +34,14 @@ export default function ForgotForm({ setActiveForm }: Props) {
 				"success"
 			);
 		}, 1500);
+		setTimeout(() => window.location.reload(), 3000);
 	}
 
 	return (
-		<form id="forgot-form" className={styles["animate-form"]}>
+		<form
+			id="forgot-form"
+			onSubmit={submitForm}
+			className={styles["animate-form"]}>
 			<div className={styles["logo"]}>
 				<FlowvaLogo />
 				Flowva
@@ -55,7 +60,7 @@ export default function ForgotForm({ setActiveForm }: Props) {
 					required
 				/>
 			</div>
-			<button type="submit" onClick={submitForm} className={styles["btn"]}>
+			<button type="submit" className={styles["btn"]}>
 				<svg
 					width="18"
 					height="18"
